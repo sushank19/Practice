@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="My Website.css">
+  </head>
+
+  <body>
+    <nav>
+      <ul class="topnav" id="dropdownclick">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#News">Favourite</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#About">About</a></li>
+        <li class="nav-right"><a href="#Sign Up">Sign Up</a></li>
+        <li class="nav-right"><a href="#Sign In">Sign In</a></li>
+        <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownmenu()">	&#9778;</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="sec-1">
+      <div class="row">
+        <div class="col-6 col-class">
+          <div>
+            <h3 class="text">Favourite dishes</h3>
+            <h3 class="text">Which cuisines you would like</h3>
+          </div>
+          <form>
+            <div>
+              <h4>Username</h4>
+              <input type="text" name="Username" placeholder="Username" class="inputbox">  
+              <h4>Password</h4>
+              <input type="password" name="Password" placeholder="Password" class="inputbox">
+            </div>
+          </form>
+        </div>
+        <!-- <div class="col-6">
+          
+        </div> -->
+      </div>
+    </div>
+
+    <script>
+      function dropdownmenu(){
+        var x=document.getElementById("dropdownclick");
+        if(x.className==="topnav"){
+            x.className+=" responsive";
+        }
+        else{
+          x.className="topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

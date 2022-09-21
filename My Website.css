@@ -1,0 +1,185 @@
+nav,header,footer{
+  display: block;
+}
+
+body{
+  line-height: 1;
+  margin:0;
+}
+
+.container{
+  width:100%;
+  margin:auto;
+  padding-top: 13%;
+  padding-bottom: 13%;  
+  /* background-image: linear-gradient(to bottom right,blue,skyblue); */
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {width:8.33%;}
+.col-2 {width:16.66%;}
+.col-3 {width:25%;}
+.col-4 {width:33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10 {width:83.33%;}
+.col-11 {width:91.66;}
+.col-12 {width:100%;}
+
+.inputbox{
+  font-size: 20px;
+  width: 250px;
+  min-width: 10px;
+  padding: 5px;
+  color: black;
+  box-shadow: 5px 5px 5px rgba(0, 183, 255, 0.589);
+  border-radius: 8px;
+}
+
+form h4{
+  color:white;
+}
+
+.col-class{
+  margin-left: 8%;
+}
+
+.video{
+  margin-left:5%;
+}
+nav{
+  width:100%;
+  margin:0;
+}
+
+.text {
+   color:white;
+   font-size: 25px;
+   margin: 1px;
+   line-height: 25px;
+}
+
+nav ul{
+  background-color: rgb(132, 255, 214);
+  overflow:hidden;
+  margin:0;
+  padding:0;
+}
+
+.topnav li{
+  list-style: none;
+  float: left;
+  margin:3px;
+}
+
+li.nav-right {
+  float:right;
+}
+
+.topnav li a{
+  display: block;
+  text-decoration: none;
+  min-height: 20px; 
+  text-align: center;
+  padding: 3px;
+  /* text-transform: uppercase; */
+  color:rgb(14, 121, 4);
+}
+
+.topnav li a:hover {
+  background-color: rgb(186, 235, 8);
+  color:white;
+  text-shadow: 5px 2px 3px black;
+  box-shadow: 2px 2px 5px black;
+}
+
+.topnav li.dropdownicon{
+  display: none;
+}
+
+h1.sec2header{
+  font: 50px;
+  text-align: center;
+}
+
+.devimg{
+  height: 100px;
+}
+
+#sec-1 {
+  background-image: linear-gradient(to bottom, blue, skyblue);
+}
+
+div.box{
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+    0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+@media screen and (max-width: 500px)
+{
+   .topnav li:not(:nth-child(1)) {
+    display: none;
+   }
+
+   .topnav li.dropdownicon{
+    display:block;
+    float: right;
+   }
+
+   .topnav.responsive li.dropdownicon{
+    position: absolute;
+    top:0;
+    right:0;
+   }
+
+   .col-6{
+    width:100%;
+    margin:0;
+   }
+
+   .div.col-class,div.video {
+    margin:10px;
+   }
+
+   input[type="text,password"]{
+    width:350px;
+   }
+
+   .video1 iframe{
+    position:relative;
+    width:100%;
+    margin:0;
+    overflow:hidden;
+   }
+
+   .topnav.responsive{
+    position : relative;
+   }
+
+   .topnav.responsive li {
+    display: inline;
+    float:none;
+   }
+
+   .topnav.responsive li a {
+    display:block;
+    text-align: left; 
+    }
+
+}
